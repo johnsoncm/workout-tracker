@@ -11,7 +11,7 @@ The workout-tracker application allows users to create, view, and track daily wo
 
 [Technologies Used](#Technologies-Used)<br>
 [User Story](#User-Story)<br>
-[Acceptance Criteria](#Application-Requirements)<br>
+[Acceptance Criteria](#Acceptance-Criteria)<br>
 [Business Context](#Business-Context)<br>
 [Mock Up](#Mock-Up)<br>
 [Usage](#Usage)<br>

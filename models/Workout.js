@@ -14,7 +14,6 @@ const WorkoutSchema = new Schema ({
 
     name: {
         type: String, 
-        unique: true,
         required: ''
     },
     type: {
@@ -39,8 +38,8 @@ const WorkoutSchema = new Schema ({
         required: ''
               
     },
-    totalDistance: {
-        type: Number,
+    distance: {
+        type: Number
     }
 }]
 });

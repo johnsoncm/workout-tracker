@@ -9,6 +9,7 @@ router.post('/api/workouts', (req, res) => {
         res.json(dbWorkout);
     })
     .catch(err => {
+        console.log('error',err)
         res.json(err);
     });
 });
@@ -16,6 +17,7 @@ router.post('/api/workouts', (req, res) => {
 // update a workout
 
 router.put('/api/workouts/:id', ({body, params}, res) => {
+    console.log({body})
     Workout.findByIdAndUpdate(
         params.id, 
         {$push: {exercises: body}},
@@ -30,18 +32,25 @@ router.put('/api/workouts/:id', ({body, params}, res) => {
 });
 
 router.get('/api/workouts', (req, res) =>{
-    Workout.aggregate([
-        {
-            $addFields: {
-                totalDuration: {
-                    $sum: '$exercises.duration'
-                }
-            }
-        }
-    ])
+   Workout.find()
+   
+    // Workout.aggregate([
+    //     {
+    //         $addFields: {
+    //             totalDuration: {
+    //                 $sum: '$exercises.duration'
+    //             }
+    //         }
+    //     }
+    // ])
     .then(dbWorkout => {
-      
-        res.json(dbWorkout);
+      const updatedData = dbWorkout.map(workout=>{
+          const totalDuration = workout.exercises.reduce((acc, curr) => acc+curr.duration, 0)
+        return {day: workout.day, exercises: workout.exercises, totalDuration, _id: workout._id}
+        
+          
+      })
+        res.json(updatedData);
     })
     .catch(err => {
         res.json(err);

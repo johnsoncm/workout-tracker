@@ -1,6 +1,6 @@
 # workout-tracker
 
-![Link to Deployed App](https://lit-lake-33755.herokuapp.com/)
+[Link to Deployed App](https://lit-lake-33755.herokuapp.com/)
 
 ## Description
 

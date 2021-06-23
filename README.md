@@ -14,7 +14,6 @@ The workout-tracker application allows users to create, view, and track daily wo
 [Acceptance Criteria](#Acceptance-Criteria)<br>
 [Business Context](#Business-Context)<br>
 [Mock Up](#Mock-Up)<br>
-[Usage](#Usage)<br>
 [Contact](#Contact)<br>
 [License](#Contact)<br>
 
@@ -56,11 +55,6 @@ The user should be able to:
 ![Added exercise](./public/images/workout-tracker1.png)
 ![Stats Page](./public/images/workout-tracker2.png)
 
-## Usage
-
-To start the server, enter: 
-
-    npm start
 
 ## Contact
 

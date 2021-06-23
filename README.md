@@ -65,9 +65,9 @@ To start the server, enter:
 ## Contact
 
 For further information, questions, or comments - I can be reached at: 
-[johnsoncm](#https://github.com/johnsoncm)
+[johnsoncm](https://github.com/johnsoncm)
 
 ## License
 
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

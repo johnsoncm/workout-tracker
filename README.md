@@ -64,7 +64,8 @@ To start the server, enter:
 
 ## Contact
 
-For further information, questions, or comments - I can be reached at: [johnsoncm](#https://github.com/johnsoncm)
+For further information, questions, or comments - I can be reached at: 
+[johnsoncm](#https://github.com/johnsoncm)
 
 ## License
 
